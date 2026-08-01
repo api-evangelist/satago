@@ -1,7 +1,29 @@
 aid: satago
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/satago.png
 name: Satago
-description: Satago is a company surfaced as a portfolio company of seedcamp and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Satago is a UK financial-technology platform offering a three-in-one cash
+  flow management solution for small and medium-sized businesses: Risk Insights
+  (real-time credit checks, risk bands, and suggested credit limits), Credit
+  Control (automated invoice chasing with customizable email and SMS reminder
+  sequences, statements, and late-fee handling), and Invoice Finance (fast,
+  flexible funding with advance rates up to 90% on single or multiple invoices,
+  offered as both selective and full facilities). The platform synchronizes with
+  300+ accounting packages including Sage, Xero, QuickBooks, KashFlow, and
+  FreeAgent to keep debtor data current. Satago sells to businesses directly and
+  through partners; it does not currently publish a public developer API,
+  consuming the accounting platforms' APIs rather than exposing its own.
 url: https://raw.githubusercontent.com/api-evangelist/satago/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fintech
+- Invoice Finance
+- Credit Control
+- Cash Flow
+- Accounts Receivable
+- Lending
+- Credit Risk
+- United Kingdom
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +51,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/satago-domain-security.yml
 - type: Website
-  url: http://satago.com
+  url: https://satago.com
+- type: Pricing
+  url: https://satago.com/pricing/
+- type: Blog
+  url: https://satago.com/blog/
+- type: Support
+  url: https://satago.com/support/
+- type: SignUp
+  url: https://app.satago.com/register
+- type: PrivacyPolicy
+  url: https://satago.com/legal/privacypolicy
+- type: TermsOfService
+  url: https://help.satago.com/wiki
+- type: GitHubOrganization
+  url: https://github.com/satago
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
